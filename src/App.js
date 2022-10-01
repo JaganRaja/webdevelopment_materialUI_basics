@@ -124,3 +124,66 @@ const App = () => {
 };
 
 export default App;
+
+
+// ### JSS theme basics
+
+// ## ref https://cssinjs.org/react-jss/?v=v10.9.2
+
+// import { createUseStyles, useTheme, ThemeProvider } from "react-jss";
+
+// THEME AS FUNCTIONS   %%%%%%%%%%%%%%
+// const useStylesFromThemeFunction = createUseStyles((theme) => ({
+//   button: {
+//     background: theme.colorPrimary,
+//   },
+//   label: {
+//     fontWeight: "bold",
+//   },
+// }));
+
+// const Button1 = ({ children, ...props }) => {
+//   const classes = useStylesFromThemeFunction(props);
+//   return (
+//     <button className={classes.button}>
+//       <span className={classes.label}>{children}</span>
+//     </button>
+//   );
+// };
+
+// THEME AS VALUE  %%%%%%%%%%%%%%%%%%
+// const useStyles = createUseStyles({
+//   button: {
+//     background: ({ theme }) => theme.colorPrimary,
+//   },
+//   label: {
+//     fontWeight: "bold",
+//   },
+// });
+
+// const Button2 = ({ children, ...props }) => {
+//   const theme = useTheme();
+//   const classes = useStyles({ ...props, theme });
+
+//   return (
+//     <button className={classes.button}>
+//       <span className={classes.label}>{children}</span>
+//     </button>
+//   );
+// };
+
+// const theme = {
+//   colorPrimary: "green",
+// };
+
+// function App() {
+//   return (
+//     <ThemeProvider theme={theme}>
+//       <Button1>I am button 1 theme as function</Button1>
+//       <Button2>I am button 2 theme as value</Button2>
+//     </ThemeProvider>
+//   );
+// }
+
+// export default App;
+
