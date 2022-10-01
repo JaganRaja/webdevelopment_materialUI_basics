@@ -1,6 +1,9 @@
 ## reference:
 https://www.youtube.com/watch?v=Xoz31I1FuiY  
 
+## Learn JSS basics
+https://cssinjs.org/react-jss/?v=v10.9.2
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
